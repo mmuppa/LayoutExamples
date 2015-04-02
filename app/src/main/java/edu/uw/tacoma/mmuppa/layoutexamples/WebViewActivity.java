@@ -18,7 +18,7 @@ public class WebViewActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.mywebview);
 
-		mWebView = (WebView) findViewById(R.id.webview);
+		mWebView = (WebView) findViewById(R.id.my_web_view);
 
 		// Set a kind of listener on the WebView so the WebView can intercept
 		// URL loading requests if it wants to

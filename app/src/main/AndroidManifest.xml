@@ -22,6 +22,10 @@
             android:label="@string/webview_app_name" >
         </activity>
         <activity
+            android:name=".ImageViewActivity"
+            android:label="@string/grid_app_name" >
+        </activity>
+        <activity
             android:name=".GridLayoutActivity"
             android:label="@string/grid_app_name" >
         </activity>
