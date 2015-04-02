@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1" >
+
+    <!-- First row -->
+    <TableRow>
+
+        <!-- start in column 1 -->
+        <TextView
+            android:id="@+id/linear_text_view"
+            android:layout_column="1"
+            android:padding="3dip"
+            android:text="@string/open_linear"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/relative_text_view"
+            android:layout_column="1"
+            android:padding="3dip"
+            android:text="@string/open_relative"
+            android:textSize="24sp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/webview_text_view"
+            android:layout_column="1"
+            android:padding="3dip"
+            android:text="Launch WebView Example"
+            android:textSize="24sp" />
+
+    </TableRow>
+
+    <!-- Create a divider -->
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/grid_text_view"
+            android:layout_column="1"
+            android:padding="3dip"
+            android:text="Launch GridLayout Example"
+            android:textSize="24sp" />
+
+    </TableRow>
+</TableLayout>

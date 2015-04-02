@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">LayoutExamples</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="linear_app_name">UILinearLayout</string>
+    <string name="red_string">red</string>
+    <string name="green_string">green</string>
+    <string name="blue_string">blue</string>
+    <string name="yellow_string">yellow</string>
+    <string name="row_one_string">row one</string>
+    <string name="row_two_string">row two</string>
+    <string name="row_three_string">row three</string>
+    <string name="row_four__string">row four</string>
+
+    <string name="open_linear"> Launch LinearLayout Example</string>
+    <string name="open_relative"> Launch RelativeLayout Example</string>
+
+    <string name="relative_app_name">UIRelativeLayout</string>
+    <string name="ok_string">OK</string>
+    <string name="cancel_string">Cancel</string>
+    <string name="type_here_string">Type here:</string>
+
+    <string name="webview_app_name">WebView</string>
+
+    <string name="grid_app_name">UIGridLayout</string>
+
+</resources>
