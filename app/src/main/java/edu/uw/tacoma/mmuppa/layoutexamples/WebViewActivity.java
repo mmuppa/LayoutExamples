@@ -24,9 +24,9 @@ public class WebViewActivity extends Activity {
 		// URL loading requests if it wants to
 
 		mWebView.setWebViewClient(new HelloWebViewClient());
-
+        mWebView.addJavascriptInterface(new WebAppInterface(this), "Android");
 		mWebView.getSettings().setJavaScriptEnabled(true);
-		mWebView.loadUrl("http://www.google.com");
+		mWebView.loadUrl("http://cssgate.insttech.washington.edu/~mmuppa/Android/test.html");
 	}
 
 	@Override
