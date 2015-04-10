@@ -39,7 +39,7 @@ public class WebViewActivity extends Activity {
 	}
 
 	private class HelloWebViewClient extends WebViewClient {
-		private static final String TAG = "HelloWebViewClient";;
+		private static final String TAG = "HelloWebViewClient";
 
 		// Give application a chance to catch additional URL loading requests
 		@Override
