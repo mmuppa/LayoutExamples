@@ -1,10 +1,10 @@
 package edu.uw.tacoma.mmuppa.layoutexamples;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.content.Intent;
 
 public class TableLayoutActivity extends Activity {
 
@@ -24,34 +24,35 @@ public class TableLayoutActivity extends Activity {
         linearTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), LinearLayoutActivity.class);
-                startActivity(intent);
+                launchActivity(v, LinearLayoutActivity.class);
             }
         });
 
         relativeTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), RelativeLayoutActivity.class);
-                startActivity(intent);
+                launchActivity(v, RelativeLayoutActivity.class);
             }
         });
 
         webViewTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), WebViewActivity.class);
-                startActivity(intent);
+                launchActivity(v, WebViewActivity.class);
             }
         });
 
         gridTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), GridLayoutActivity.class);
-                startActivity(intent);
+                launchActivity(v, GridLayoutActivity.class);
             }
         });
+    }
+
+    private void launchActivity(View v, Class<? extends Activity> clazz) {
+        Intent intent = new Intent(v.getContext(), clazz);
+        startActivity(intent);
     }
 
 
