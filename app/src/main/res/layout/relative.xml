@@ -15,19 +15,22 @@
         android:id="@+id/ok_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/entry"
-        android:layout_marginLeft="10dip"
         android:text="@string/ok_string"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:layout_below="@+id/entry"
+        android:layout_toRightOf="@+id/cancel_button"
+        android:layout_toEndOf="@+id/cancel_button"/>
 
     <Button
         android:id="@+id/cancel_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/ok_button"
-        android:layout_toLeftOf="@id/ok_button"
         android:text="@string/cancel_string"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/ok_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="79dp"
+        android:layout_marginStart="79dp"/>
 
 </RelativeLayout>
